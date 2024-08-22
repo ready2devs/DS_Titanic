@@ -1,22 +1,22 @@
 # Titanic Notebook
 
-This notebook uses machine learning algorithms to get the best accuracy of predictions for who survived the sinking of the Titanic given the attributes in the dataset.
+Este cuaderno utiliza algoritmos de aprendizaje automático para obtener la mejor precisión de predicciones sobre quién sobrevivió al hundimiento del Titanic, dados los atributos en el conjunto de datos.
 
 ## Setup
 
-- Install [Anaconda](https://www.anaconda.com/)
-- Set the channel priority to strict to avoid issues with the environment creation taking forever.
+- Instalar [Anaconda](https://www.anaconda.com/)
+- Establecer la prioridad del canal a estricta para evitar problemas con la creación del entorno que pueden tomar mucho tiempo.
   - `conda config --set channel_priority strict`
-- Run the following commands (in either the terminal or an Anaconda Prompt):
+- Corra los siguientes comandos (ya sea en la terminal o en en un Anaconda Prompt):
   - `conda env create -f golden_scenario_env.yml`
   - `conda activate golden_scenario_env`
   - `conda install python=3.7`
-- In VS Code, open the [Titanic.ipynb](Titanic.ipynb) file and connect to the golden_scenario_env kernel
+- En VS Code, abre el archivo [Titanic.ipynb](Titanic.ipynb) y conéctate al kernel golden_scenario_env
 
-You need to setup the environment as an `ipykernel` to use it from the Jupyter notebook. To do it run inside of the conda activated environment:
+Necesitas configurar el entorno como un `ipykernel` para usarlo desde el cuaderno de Jupyter. Para hacerlo, ejecuta dentro del entorno activado de conda:
 
 `python -m ipykernel install --user --name golden_scenario_env --display-name "Golden Scenario Env"`
 
-Also if you want to support PDF export from jupyter you need to setup LaTeX:
+También, si deseas soportar la exportación a PDF desde Jupyter, necesitas configurar LaTeX:
 
 `sudo apt-get install texlive-xetex texlive-fonts-recommended texlive-plain-generic`
